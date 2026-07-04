@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog with Dynamic Filters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="image/logo.jpeg" alt="SHREE Bakes Logo">
+            <span class="brand-name">SHREE Bakes</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#">Shop <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></a>
+            <a href="our_story.html">Our story</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <div class="cart-icon-wrapper">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-counter" id="cartCounter">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+    </header>
+<section class="products-banner">
+    <div class="banner-overlay">
+        <h1>PRODUCTS</h1>
+    </div>
+</section>
+<div class="utility-bar-wrapper">
+    <div class="container utility-bar">
+        <div class="utility-left">
+            <span class="product-count" id="productCount">Products (0)</span>
+            <button class="filter-btn" id="filterToggleBtn">
+                <i class="fa-solid = fa-sliders"></i> Filter
+            </button>
+            <button class="filter-btn" id="clearFiltersBtn" style="border-color: #cc0000; color: #cc0000; margin-left: 10px; display: none;">
+                Clear Filters
+            </button>
+            <div class="layout-toggle-icons">
+                <button class="layout-btn active" id="gridLayoutBtn" title="Grid View">
+                    <i class="fa-solid fa-border-all"></i>
+                </button>
+                <button class="layout-btn" id="listLayoutBtn" title="List View">
+                    <i class="fa-solid fa-list"></i>
+                </button>
+            </div>
+        </div>
+       <div class="utility-right">
+            <div class="sort-container">
+                <label for="sortBy">Sort By:</label>
+                <div class="custom-select-wrapper">
+                    <select id="sortBy">
+                        <option value="alpha-asc">Alphabetically, A-Z</option>
+                        <option value="alpha-desc">Alphabetically, Z-A</option>
+                        <option value="price-asc">Price, low to high</option>
+                        <option value="price-desc">Price, high to low</option>
+                        <option value="rating-desc">Rating, high to low</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container main-content-wrapper">
+    <!-- FILTER PANEL DRAWER -->
+    <!-- FILTER PANEL DRAWER -->
+    <div class="filter-drawer" id="filterDrawer">
+        <div class="filter-grid">
+            <!-- Categories Group -->
+            <div class="filter-column">
+                <h3>Categories</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="category" value="Cake">
+                    <span class="checkmark"></span>
+                    Cake
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="category" value="Dessert">
+                    <span class="checkmark"></span>
+                    Dessert
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="category" value="Cookie">
+                    <span class="checkmark"></span>
+                    Cookie
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="category" value="Croissant">
+                    <span class="checkmark"></span>
+                    Croissant
+                </label>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="category" value="Coming Soon">
+                    <span class="checkmark"></span>
+                    Coming Soon
+                </label> 
+
+            </div>
+
+            <!-- Type Group -->
+            <div class="filter-column">
+                <h3>Type</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="type" value="Sweet Delights">
+                    <span class="checkmark"></span>
+                    Sweet Delights
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="type" value="Bakery Specials">
+                    <span class="checkmark"></span>
+                   Bakery Specials
+                </label>
+            </div>
+
+            <!-- Minimum Rating Group -->
+            <div class="filter-column">
+                <h3>Minimum Rating</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="rating" value="5">
+                    <span class="checkmark"></span>
+                    5 Stars
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="rating" value="4">
+                    <span class="checkmark"></span>
+                    4 Stars & Up
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" class="filter-input" data-filter-group="rating" value="3">
+                    <span class="checkmark"></span>
+                    3 Stars & Up
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS COMPONENT HOUSING -->
+    <section class="products-section">
+        <!-- Structural Empty Filter Fallback Banner -->
+        <div id="noResultsMsg" style="display: none; text-align: center; padding: 60px 20px; font-size: 18px; color: #666; width: 100%;">
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 40px; margin-bottom: 15px; display: block; color: #ccc;"></i>
+            No products match the selected criteria. Try adjusting your filters.
+        </div>
+        
+        <!-- Live Target Node for JS Injection -->
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+</div>
+<!-- SITE FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-links-wrapper">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-channels">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="payment-badges-row">
+                    <div class="cards-logos">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div class="legal-copy">
+                        &copy; 2026 Abokichi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- JavaScript Integration Core -->
+<script src="js/product.js"></script>
+</body>
+</html>

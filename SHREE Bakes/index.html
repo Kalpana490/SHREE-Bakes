@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHREE Bakes</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+ <header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="image/logo.jpeg" alt="SHREE Bakes Logo">
+            <span class="brand-name">SHREE Bakes</span>
+        </a>
+        <nav class="nav-links">
+            <a href="product.html">Shop <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></a>
+            <a href="our_story.html">Our story</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+          <div class="cart-icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+         <span class="cart-counter" id="cartCounter">0</span>
+       </div>
+        </div>
+    </div>
+</header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-images">
+            <img src="image/bg1.jpeg" alt="Miso Dish Left">
+            <img src="image/bg2.webp" alt="Miso Spread Right">
+        </div>
+        <div class="hero-content">
+            <h1>Delight<br>Your Taste With<br><span>Homemade Goodness</span></h1>
+            <!-- LINK UPDATED: Hero Shop Now Button -->
+            <a href="product.html" class="btn">Shop now</a>
+            <p class="shipping-info"><strong>Free shipping</strong> within the<br>US for orders of $64 or more</p>
+        </div>
+    </section>
+
+    <!-- BENEFITS CHECKBAR -->
+    <div class="benefits-bar">
+        <div class="container benefits-container">
+            <div class="benefit-item"><i class="fa-regular fa-circle-check"></i> Home Made</div>
+            <div class="benefit-item"><i class="fa-regular fa-circle-check"></i> Freshly Baked</div>
+            <div class="benefit-item"><i class="fa-regular fa-circle-check"></i> Premium Ingredients</div>
+            <div class="benefit-item"><i class="fa-regular fa-circle-check"></i> No Preservatives</div>
+            <div class="benefit-item"><i class="fa-regular fa-circle-check"></i> Unique Flavors</div>
+        </div>
+    </div>
+
+    <!-- CATEGORIES (OUR STORY / RECIPES) -->
+  <section class="categories">
+    <div class="container">
+        <div class="category-grid">
+            <a href="our_story.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img src="image/ourstory.jpg" alt="Our Story">
+                <br>
+                <h3>Our story</h3>
+            </a>
+            <a href="product.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img src="image/baking.jpeg" alt="Products">
+                <br>
+                <h3>Products</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- BEST SELLERS PRODUCTS -->
+    <section class="best-sellers">
+    <div class="container">
+        <div class="section-icon">
+            <img src="image/logo.jpeg" alt="SHREE Bakes Logo">
+        </div>
+        <h2 class="section-title">Best Sellers</h2>
+        
+        <div class="products-grid">
+                <!-- Product 1 (ID: 1) -->
+                <!-- LINKS UPDATED: Added anchor tags wrapping titles and images with matching ID params -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <a href="product.html?id=1"><img src="image/tiramisu.jpeg" alt="OKAZU Lovers Set"></a>
+                        <div class="hover-actions">
+                            <div class="action-btn"><i class="fa-regular fa-heart"></i></div>
+                            <div class="action-btn"><i class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-title"><a href="product.html?id=1" style="text-decoration: none; color: inherit;">Tiramisu - 250 grms</a></div>
+                    <div class="product-price">$135.00 <span class="price-original">$167.88</span></div>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="review-count">32 Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 (ID: 2) -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <a href="product.html?id=2"><img src="image/cheese.jpeg" alt="OKAZU Chili Miso"></a>
+                        <div class="hover-actions">
+                            <div class="action-btn"><i class="fa-regular fa-heart"></i></div>
+                            <div class="action-btn"><i class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-title"><a href="product.html?id=2" style="text-decoration: none; color: inherit;">BlueBerry - Cheese Cake (1 piece)</a></div>
+                    <div class="product-price">$13.99</div>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="review-count">18 Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 (ID: 3) -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <a href="product.html?id=3"><img src="image/cookies.webp" alt="Instant Miso Soup Tasting Set"></a>
+                        <div class="hover-actions">
+                            <div class="action-btn"><i class="fa-regular fa-heart"></i></div>
+                            <div class="action-btn"><i class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-title"><a href="product.html?id=3" style="text-decoration: none; color: inherit;">Trending Scopable Cookie</a></div>
+                    <div class="product-price">$19.99 <span class="price-original">$24.00</span></div>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="review-count">12 Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 (ID: 4) -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <a href="product.html?id=4"><img src="image/mango.jpeg" alt="ABO Matcha"></a>
+                        <div class="hover-actions">
+                            <div class="action-btn"><i class="fa-regular fa-heart"></i></div>
+                            <div class="action-btn"><i class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-title"><a href="product.html?id=4" style="text-decoration: none; color: inherit;">Mango Loaded Cake - 1/2 kg</a></div>
+                    <div class="product-price">$34.00</div>
+                    <div class="rating-container">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="review-count">24 Reviews</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO HERO BANNER -->
+   <section class="video-banner"> <h2>A Slice of Happiness in Every Bitet</h2> <div class="play-btn"> <i class="fa-solid fa-play"></i> </div> </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="newsletter">
+                    <h3>Subscribe Newsletter</h3>
+                    <p>get the latest on sales, new releases and more...</p>
+                    <div class="search-box">
+                        <input type="email" placeholder="Enter your mail">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="our_story.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="payment-copyright">
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2026 Abokichi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+</html>

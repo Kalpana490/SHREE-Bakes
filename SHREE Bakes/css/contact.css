@@ -1,0 +1,252 @@
+.contact-hero {
+    text-align: center;
+    padding: 70px 20px 40px;
+    background-color: #fcfbfa;
+}
+
+.contact-eyebrow {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-info-section {
+    padding: 50px 20px;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-info-card {
+    text-align: center;
+    padding: 35px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.contact-info-card i {
+    font-size: 30px;
+    color: #0b4227;
+    margin-bottom: 16px;
+}
+
+.contact-info-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-info-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-form-section {
+    background: rgb(233, 233, 219);
+    padding: 70px 20px;
+}
+
+.contact-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-form-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.contact-form-text p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0b4227;
+}
+
+.submit-btn {
+    background: #0b4227;
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #073018;
+}
+
+.form-success {
+    display: none;
+    margin-top: 15px;
+    color: #0b4227;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-success.show {
+    display: block;
+}
+
+footer {
+    background: rgb(233, 233, 219);
+    color: #0e0909;
+    padding: 40px 0 20px 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    gap: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 25px;
+}
+
+.footer-links-wrapper ul {
+    list-style: none;
+}
+
+.footer-links-wrapper ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links-wrapper ul li a {
+    color: #121010;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links-wrapper ul li a:hover {
+    color: #0b4227;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-channels {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.social-channels a {
+    color: #110d0d;
+    transition: color 0.2s;
+}
+
+.social-channels a:hover {
+    color: #0b4227;
+}
+
+.payment-badges-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.cards-logos {
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    color: #150f0f;
+}
+
+.legal-copy {
+    font-size: 12px;
+    color: #020202;
+}
+
+
+

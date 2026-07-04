@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/product_details.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <div class="logo brand-lockup">
+    <a href="index.html" class="brand-link">
+        <img src="image/logo.jpeg" alt="SHREE Bakes Logo">
+        <span class="brand-name">SHREE Bakes</span>
+    </a>
+</div>
+        <nav class="nav-links">
+            <a href="#">Shop <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></a>
+            <a href="our_story.html">Our story</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <div class="cart-icon-wrapper">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-counter" id="cartGlobalCounter">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- BREADCRUMBS PROPS -->
+    <nav class="breadcrumb">
+        <a href="index.html">Shop</a> &gt; <span id="breadcrumbTitle">Product Details</span>
+    </nav>
+
+    <!-- DISPLAY RUNTIME PROFILE LAYOUT -->
+    <main class="detail-main-layout">
+        <!-- Gallery Track Section -->
+        <section class="image-gallery">
+            <div class="main-preview-box">
+                <img id="productMainImage" src="" alt="Main View">
+            </div>
+        </section>
+
+        <!-- Dynamic Action Context Block -->
+        <section class="purchase-panel">
+            <h1 class="detail-title" id="productDetailTitle">Loading item profile...</h1>
+            
+            <div class="product-rating-row">
+                <div class="stars-wrapper" id="detailStars"></div>
+                <span class="rating-count" id="detailReviewCount"></span>
+            </div>
+
+            <div class="detail-pricing">
+                <span class="current-price" id="detailCurrentPrice">$0.00</span>
+                <span class="compare-price" id="detailComparePrice"></span>
+            </div>
+
+            <!-- ACTION TRIGGERS -->
+            <div class="action-row">
+                <button class="action-btn btn-cart" id="addToCartBtn">Add to Cart</button>
+                <button class="action-btn btn-buy" id="buyNowBtn">Buy Now</button>
+            </div>
+
+            <div class="meta-utilities">
+                <a class="meta-link"><i class="fa-regular fa-heart"></i> WISHLIST</a>
+                <span class="meta-link"><i class="fa-solid fa-share-nodes"></i> SHARE: 
+                    <i class="fa-brands fa-facebook-f" style="margin-left: 10px;"></i>
+                    <i class="fa-brands fa-twitter" style="margin-left: 10px;"></i>
+                    <i class="fa-brands fa-pinterest" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <!-- INTERACTIVE TAB MODULE BLOCK -->
+    <section class="tabs-container">
+        <div class="tabs-header-row">
+            <button class="tab-trigger active" data-tab="tab-description">Description</button>
+            <button class="tab-trigger" data-tab="tab-reviews">Reviews</button>
+            <button class="tab-trigger" data-tab="tab-videos">Videos</button>
+            <button class="tab-trigger" data-tab="tab-comments">Comments</button>
+        </div>
+        <div class="tab-viewport">
+            <div class="tab-panel active" id="tab-description">
+                <p id="dynamicLongDescription">Crafted with premium ingredients and baked fresh to deliver the perfect balance of flavor and texture. Every bite is made with care, making it an ideal treat for celebrations, coffee breaks, or simply satisfying your sweet cravings.</p>
+            </div>
+            <div class="tab-panel" id="tab-reviews">
+                <p><strong>Customer Feedback Log</strong></p>
+                <p style="margin-top: 10px; color:#666;">★★★★★ "Absolutely delicious! Fresh, soft, and full of flavor. Will definitely order again."</p>
+                <p style="margin-top: 10px; color:#666;">★★★★★ "One of the best bakery treats I've had. Highly recommended!"</p>
+                <p style="margin-top: 10px; color:#666;">★★★★☆ "Loved the texture and taste. Great value for the price."</p>
+                
+            </div>
+            <div class="tab-panel" id="tab-videos">
+                <p>No external streaming guides or deployment video instructions loaded for this stock profile index.</p>
+            </div>
+            <div class="tab-panel" id="tab-comments">
+                <p>Emily R.  -  "The cake was incredibly fresh and tasted amazing. I'll definitely be ordering again!"</p>
+                <p >James K.  -  "Perfect balance of sweetness and softness. My family loved every bite."</p>
+                <p>Daniel W.  -  "I was impressed by the quality and freshness. Highly recommended!"</p>
+                <p>Noah P.  -  "The croissant was buttery, flaky, and just like one from a French bakery."</p>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- SITE FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-links-wrapper">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-channels">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="payment-badges-row">
+                    <div class="cards-logos">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div class="legal-copy">
+                        &copy; 2026 Abokichi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Implementation Code Logic Link -->
+<script src="js/product_details.js"></script>
+</body>
+</html>

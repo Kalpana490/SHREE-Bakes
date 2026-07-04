@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SHREE Bakes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="image/logo.jpeg" alt="SHREE Bakes Logo">
+            <span class="brand-name">SHREE Bakes</span>
+        </a>
+        <nav class="nav-links">
+            <a href="product.html">Shop <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></a>
+            <a href="our_story.html">Our story</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </div>
+</header>
+
+<section class="contact-hero">
+    <p class="contact-eyebrow">Contact</p>
+    <h1 class="contact-title">We'd love to hear from you</h1>
+    <p class="contact-subtitle">Questions, custom orders, or just saying hi, reach out anytime.</p>
+</section>
+
+<section class="contact-info-section container">
+    <div class="contact-info-grid">
+        <div class="contact-info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Visit us</h3>
+            <p>12 Baker Street, Coimbatore, Tamil Nadu, India</p>
+        </div>
+        <div class="contact-info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Call us</h3>
+            <p>+91 98765 43210</p>
+        </div>
+        <div class="contact-info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email us</h3>
+            <p>hello@shreebakes.com</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form-section">
+    <div class="container contact-form-wrapper">
+        <div class="contact-form-text">
+            <h2>Send us a message</h2>
+            <p>Whether it's a custom cake order, a question about ingredients, or feedback on your last order, we read every message and reply within a day.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send message</button>
+            <p class="form-success" id="formSuccess">Thanks! Your message has been sent.</p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-links-wrapper">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund policy</a></li>
+                <li><a href="#">Press</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-channels">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="payment-badges-row">
+                <div class="cards-logos">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+                <div class="legal-copy">&copy; 2026 SHREE Bakes.</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>
